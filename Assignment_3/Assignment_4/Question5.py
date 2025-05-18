@@ -27,12 +27,12 @@ for value in Data:
         print(value)
 
 
-filtered = list(filter(prime, Data))
-print("filtered list is", filtered)
+fData= list(filter(prime, Data))
+print("filtered list is", fData)
 
 
-mapped = list(map(lambda x: x * 2, filtered))
-print("mapped list is", mapped)
+mData = list(map(lambda x: x * 2, fData))
+print("mapped list is", mData)
 
-maximum = reduce(lambda x, y: x if x > y else y, mapped)
-print("reduced list is", maximum)
+rData = reduce(lambda x, y: x if x > y else y, mData)
+print("reduced list is", rData)
